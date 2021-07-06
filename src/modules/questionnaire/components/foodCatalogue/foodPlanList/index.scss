@@ -1,0 +1,78 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin imageCommon {
+    max-height: 173px;
+    height: 100%;
+    object-fit: cover;
+    min-height: 173px;
+}
+.menu-list-items {
+  background-color: $color_white;
+
+  .menu-item-card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    cursor: pointer;
+
+    .common-image {
+        @include imageCommon;
+    }
+
+    .menu-item-cards-active {
+      height: auto;
+      background: $color_white;
+      border: 2px solid $color_light_yellow;
+      box-sizing: border-box;
+      border-radius: 7px;
+      margin-top: 0px;
+
+      .common-image {
+        max-height: 173px;
+        height: 100%;
+        object-fit: cover;
+        min-height: 173px;
+      }
+
+      .item-card-header {
+        max-height: 85px;
+        .item-name {
+          @include MontserratFont;
+          font-weight: bolder;
+          font-size: 21px;
+          letter-spacing: 0.05em;
+          text-transform: capitalize;
+          color: $color_lightest_woodsmoke;
+        }
+        .item_para {
+          font-size: 16px;
+          padding-top: 10px;
+        }
+      }
+    }
+
+    .menu-item-cards {
+      height: auto;
+      background: $color_white;
+      border: 2px solid $color_dark_alto;
+      box-sizing: border-box;
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+
+      .common-image {
+        @include imageCommon;
+      }
+    }
+  }
+}
+.item-name {
+  @include MontserratFont;
+  font-weight: bolder;
+  font-size: 21px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: $color_lightest_woodsmoke;
+}

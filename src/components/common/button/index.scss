@@ -1,0 +1,16 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.login-btn {
+  outline: none;
+  font-weight: bold;
+  margin-top: 4% !important;
+  color: $color_white;
+  background: $color_light_yellow;
+  width: 95%;
+  display: block;
+  margin: auto;
+  padding: 2.5%;
+  border: none;
+  border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.item-card-header {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .item-name {
+    @include MontserratFont;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: $color_lightest_woodsmoke;
+  }
+}
+.mobile-font-size{
+font-size: 14px !important;
+margin: 0px !important;
+}

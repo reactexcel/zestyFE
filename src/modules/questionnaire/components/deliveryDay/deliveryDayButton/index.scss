@@ -1,0 +1,28 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.dayActive {
+  background-color: $color_yellow !important;
+  margin: 3% 2% !important;
+  padding: 2% !important;
+  color: $color_black !important;
+  box-sizing: none;
+}
+
+.day {
+  padding: 2% 2% !important;
+  margin: 2% !important;
+  color: $color_light_fiord !important;
+  border-color: $color_lightest_white !important;
+  outline: none !important;
+  box-sizing: none !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .dayActive {
+    width: 40% !important;
+  }
+  .day{
+    width: 40%;
+  }
+}

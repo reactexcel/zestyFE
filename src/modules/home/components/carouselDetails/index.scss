@@ -1,0 +1,55 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.customer-review-box {
+  position: relative;
+  background: $color_white;
+  border: 1px solid $color_darkest_alto;
+  box-sizing: border-box;
+  box-shadow: $box_shadow_secondary;
+  border-radius: 8px;
+
+  img {
+    position: absolute;
+    top: -10%;
+    left: 43%;
+  }
+
+  .customer-name {
+    @include RubikFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color_light_woodsmoke;
+    padding-top: 35px;
+  }
+
+  .media-buyer {
+    @include RubikFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color_solid_alto;
+  }
+
+  .customer-review-desc {
+    @include RubikFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: $color_light_woodsmoke;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .customer-review-box {
+    img {
+      position: absolute;
+      top: -10%;
+      left: 32% !important;
+    }
+  }
+}

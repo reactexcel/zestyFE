@@ -1,0 +1,39 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin commonDayList {
+  @include NunitoFont;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: flex-start;
+  border-bottom: 1px solid $color_grey_primary;
+}
+.day-list {
+  z-index: 1;
+  position: absolute;
+  width: 133px;
+  height: auto;
+  right: 14px;
+  top: 365px;
+  background: $color_white;
+  filter: drop-shadow(-4px 4px 20px $color_black_secondary);
+
+  .active {
+    text-decoration: none;
+
+    .inactive-day {
+      @include commonDayList;
+      color: $color_light_yellow;
+    }
+  }
+
+  .inactive-day {
+    @include commonDayList;
+    color: $color_grey_lighter;
+  }
+}

@@ -1,0 +1,31 @@
+@import "src/assets/scss/variables.scss";
+
+@mixin commonSideDish {
+  background: $color_white;
+  border: 0.5px solid $color_whitish;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px $color_blackish;
+  border-radius: 4px;
+  z-index: 999;
+}
+.food_complement {
+  @include commonSideDish;
+  width: 10vw;
+  position: absolute;
+  top: 60px !important;
+  right: 0;
+  .food_complement_list {
+    border: 0.1px solid $color_whitish_regular;
+  }
+}
+
+.food_complement_mobile {
+  @include commonSideDish;
+  width: 100px;
+  position: absolute;
+  top: 60px !important;
+  right: 0;
+  .food_complement_list {
+    border: 0.1px solid $color_whitish_regular;
+  }
+}

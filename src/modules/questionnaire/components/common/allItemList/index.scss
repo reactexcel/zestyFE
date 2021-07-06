@@ -1,0 +1,40 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.all-item-hover {
+  .all-item-con {
+    border: 1px solid $color_light_grey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 22% 10% 14% 10%;
+    margin-bottom: 15%;
+    cursor: pointer;
+
+    .all-item-itm {
+      @include NunitoFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 34px;
+      color: $color_black;
+    }
+  }
+
+  .all-item-con-active {
+    border: 1px solid $color_yellow;
+    border-radius: 10px;
+    text-align: center;
+    padding: 22% 10% 14% 10%;
+    margin-bottom: 15%;
+    cursor: pointer;
+
+    .all-item-itm {
+      @include NunitoFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 34px;
+      color: $color_black;
+    }
+  }
+}

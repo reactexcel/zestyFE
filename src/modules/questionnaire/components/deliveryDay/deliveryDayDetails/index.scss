@@ -1,0 +1,17 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.dietaryquestion {
+  padding-left: 8%;
+  padding-top: 2%;
+}
+@media only screen and (max-width: 650px) {
+  .dietaryquestion {
+    padding-left: 2% !important;
+    padding-top: 3rem !important;
+    .options-day {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}

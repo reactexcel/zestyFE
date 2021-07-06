@@ -1,0 +1,23 @@
+@import "src/assets/scss/variables.scss";
+
+.price_summary {
+  .total_price_heading {
+    color: $color_black;
+    font-size: 19px;
+  }
+  
+  .proceed_for_checkout {
+    background: $color_yellow;
+    border-radius: 40.1345px;
+    color: $color_white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 12px 12px;
+    width: 100%;
+    outline: none;
+  }
+  hr {
+    color: $color_darkest_wheat;
+  }
+}

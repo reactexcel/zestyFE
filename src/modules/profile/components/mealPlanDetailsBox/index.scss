@@ -1,0 +1,14 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.subscription_item {
+  .subscription_item_img {
+    object-fit: cover;
+  }
+  .subscription_item_name {
+    display: inline-block;
+    margin-bottom: 0px;
+    max-width: fit-content;
+    color: $color_darkest_woodsmoke;
+  }
+}

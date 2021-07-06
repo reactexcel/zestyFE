@@ -1,0 +1,15 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.last_week_plan {
+  width: 100%;
+}
+
+.subscription-box {
+  min-width: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 3px dashed $color_alto;
+  box-sizing: border-box;
+}

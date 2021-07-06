@@ -1,0 +1,91 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.login-page {
+  width: 50%;
+  margin: auto;
+}
+
+.welcome {
+  padding-top: 4%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.welcome::after {
+  content: "";
+  display: block;
+  padding-bottom: 4%;
+  border-bottom: 2px solid $color_light_fiord;
+}
+
+.login-link2 {
+  white-space: nowrap;
+  padding-top: 20px;
+  color: $color_light_fiord;
+  display: block;
+  cursor: pointer;
+}
+
+.login-link3 {
+  white-space: nowrap;
+  padding-left: 8px;
+  padding-top: 19px;
+  color: $color_light_yellow;
+  display: block;
+  cursor: pointer;
+}
+
+.or {
+  font-size: 24px;
+  text-align: center;
+  color: $color_light_fiord;
+}
+
+.facebook-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4% !important;
+
+  span {
+    .kep-login-facebook {
+      padding: 8px 30px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  }
+}
+
+.google-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4% !important;
+
+  .gmail-login {
+    box-shadow: 0px 2px $color_gmail_primary !important;
+    border: 2px solid $color_gmail_secondary !important;
+    border-radius: 10px !important;
+    padding: 0px 18px !important;
+
+    span {
+      font-size: 14px !important;
+      font-weight: bold !important;
+    }
+  }
+}
+
+.desktop {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .login-page {
+    width: 75%;
+    margin: auto;
+  }
+}

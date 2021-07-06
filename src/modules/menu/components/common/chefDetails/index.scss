@@ -1,0 +1,20 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.chef_details {
+  .chef_profile_images {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 14px;
+  }
+  .chef-names {
+    @include NunitoFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: $color_lightest_woodsmoke;
+  }
+}

@@ -1,0 +1,79 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.north1 {
+  background-image: url("../../../../../assets/images/north-indian.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.north2 {
+  background-image: url("../../../../../assets/images/south-indian.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.north3 {
+  background-image: url("../../../../../assets/images/Rectangle\ 11.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.north4 {
+  background-image: url("../../../../../assets/images/Rectangle\ 10.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.north5 {
+  background-image: url("../../../../../assets/images/italian.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.north-txt {
+  font-size: 25px;
+  padding-top: 43%;
+  padding-bottom: 43%;
+  text-align: center;
+}
+
+.north-active {
+  white-space: nowrap;
+  width: 100%;
+  height: 95%;
+  color: $color_white;
+  border-radius: 50%;
+  border: 6px solid $color_yellow;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.north-i {
+  white-space: nowrap;
+  width: 100%;
+  height: 95%;
+  color: $color_white;
+  border-radius: 50%;
+  border: 3px solid $color_alto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .north-txt {
+    font-size: 16px !important;
+  }
+
+  .north-active {
+    height: 90%;
+  }
+  .north-i {
+    height: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .north-txt {
+    font-size: 21px;
+  }
+}

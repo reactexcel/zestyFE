@@ -1,0 +1,175 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.meal_feature {
+  .row1 {
+    margin-right: 22px !important;
+  }
+
+  .row3 {
+    margin-right: 0px !important;
+
+    .meal_feature_heading1 {
+      @include RubikFont;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 100.4%;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      color: $color_black;
+      margin-bottom: 0.5rem !important;
+      text-align: center;
+      padding: 40px;
+      font-size: 40px;
+    }
+
+    .meal_feature_subheading {
+      @include RubikFont;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 100.4%;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      color: $color_black;
+    }
+
+    .meal_feature_text1 {
+      @include NunitoFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: $color_black;
+      margin-bottom: 0.5rem !important;
+      padding-right: 50px;
+      padding-left: 10px;
+    }
+
+    .zesty_img {
+      object-fit: fill;
+      width: 100% !important;
+      height: fit-content;
+    }
+  }
+
+  .row2 {
+    margin-right: 0px !important;
+  }
+
+  margin-right: 0px !important;
+
+  .meal_feature_heading {
+    @include RubikFont;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100.4%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: $color_lightest_woodsmoke;
+    padding-left: 10px;
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+  }
+
+  .meal_feature_para {
+    @include NunitoFont;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: $color_black;
+    padding-left: 0px !important;
+  }
+
+  .button {
+    border: none;
+    border-radius: 50px;
+    background-color: $color_lightest_woodsmoke;
+    color: $color_white;
+    font-size: 15px;
+    @include NunitoFont;
+    padding: 10px 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    outline: none;
+  }
+  .personal_chef_button {
+    border: none;
+    background: $color_lightest_woodsmoke;
+    border-radius: 50px;
+    color: $color_dark_wheat;
+    padding: 7px 15px;
+    font-size: 14px;
+    margin: auto;
+    outline: none;
+  }
+  .meal-setting {
+    text-align: center;
+    color: $color_white;
+    font-size: 25px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .meal_feature {
+    .row1 {
+      .meal_desc {
+        display: none;
+      }
+    }
+
+    .row2 {
+      flex-direction: column-reverse;
+
+      .home_meal_desc {
+        display: none;
+      }
+    }
+
+    .meal_feature_heading {
+      text-align: start;
+      font-size: 25px !important;
+      padding-left: 15px !important;
+    }
+
+    .row3 {
+      .col {
+        margin-top: 0px !important;
+      }
+
+      .meal_feature_heading1 {
+        margin-left: 1rem;
+      }
+
+      .meal_feature_subheading {
+        margin-left: 1rem;
+      }
+
+      .meal_feature_text1 {
+        margin-left: 1rem;
+        padding-right: 0px !important;
+      }
+    }
+
+    .button {
+      margin-bottom: 15px;
+      margin-left: 15px !important;
+      outline: none;
+    }
+
+    .meal-setting {
+      text-align: center;
+      color: $color_white;
+      font-size: 23px;
+      padding-left: 25%;
+      padding-right: 25%;
+      padding-top: 10%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "src/assets/scss/variables.scss";
+
+@mixin tableBorder {
+  border: 1px solid $color_black;
+  box-sizing: border-box;
+}
+
+.mobile_chef_table {
+  .breakfast {
+    @include tableBorder;
+    background: $color_light_green;
+  }
+  .lunch {
+    @include tableBorder;
+    background: $color_medium_wheat;
+  }
+  .dinner {
+    @include tableBorder;
+    background: $color_yellow_light;
+  }
+}

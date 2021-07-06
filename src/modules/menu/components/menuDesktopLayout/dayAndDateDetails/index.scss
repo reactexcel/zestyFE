@@ -1,0 +1,11 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.menu_date {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 41px;
+  color: $color_yellow;
+}

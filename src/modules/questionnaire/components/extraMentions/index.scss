@@ -1,0 +1,55 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.container-sp38 {
+  padding: 0% 6%;
+}
+
+.select-y38 {
+  @include MontserratFont;
+  font-size: 25px;
+  padding-top: 4%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  text-transform: capitalize;
+  color: $color_grey;
+}
+
+.txt-ar-38 {
+  margin-top: 10px;
+  width: 90%;
+  border: 1px solid $color_light_grey !important;
+  border-radius: 10px;
+  padding-bottom: 7%;
+  padding-top: 1%;
+  padding-left: 2%;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .select-y38 {
+    margin-top: 10px;
+
+    font-size: 19px;
+    line-height: 30px !important;
+  }
+
+  .txt-ar-38 {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid $color_light_grey;
+    border-radius: 10px;
+    padding-bottom: 26%;
+    padding-top: 3%;
+    padding-left: 2%;
+    margin-bottom: 30px;
+    outline: none;
+  }
+
+  ::placeholder {
+    font-size: 13px;
+  }
+}

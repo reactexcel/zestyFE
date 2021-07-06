@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+
+@mixin itemDescription {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+.meal-item-description {
+  @include itemDescription;
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  color: $color_lightest_woodsmoke;
+  margin-left: 14px;
+}
+
+.meal-item-description-mobile {
+  @include itemDescription;
+  font-size: 13px;
+  line-height: 15px;
+  color: $color_fiord;
+  min-height: 65px;
+}

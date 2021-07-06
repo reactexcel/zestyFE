@@ -1,0 +1,14 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+.menu-list-items {
+  background-color: $color_white;
+  .menu-item-card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+
+}

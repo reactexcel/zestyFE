@@ -1,0 +1,7 @@
+@import "src/assets/scss/variables.scss";
+
+.chef_table_heading_name {
+  border: 1px solid $color_dark_wheat;
+  width: 25%;
+  word-break: break-all;
+}

@@ -1,0 +1,32 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.container-sp36 {
+  padding: 0% 6%;
+  .dietary-text {
+    @include MontserratFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color_fiord_dark;
+  }
+  .select-y36 {
+    font-size: 25px;
+    padding-top: 4%;
+    @include MontserratFont;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37px;
+    color: $color_grey;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-sp36 {
+    .select-y36 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }
+}

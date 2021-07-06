@@ -1,0 +1,39 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.login-input {
+  width: 95%;
+  padding: 4% 0px;
+  display: block;
+  margin: auto;
+  border: none;
+  border-bottom: 1.3px solid $color_light_fiord;
+  outline: none;
+}
+
+.login-input::after {
+  content: "";
+  background: $color_blue;
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: $color_red;
+}
+
+.input-details {
+  input {
+    background: $color_wheat;
+    border: 1px solid $color_darker_wheat;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 55px;
+    outline: none;
+    padding-left: 10px;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

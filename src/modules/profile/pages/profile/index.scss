@@ -1,0 +1,17 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.user-details {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.space {
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .user-details {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

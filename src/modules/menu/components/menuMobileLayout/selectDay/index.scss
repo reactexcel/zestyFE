@@ -1,0 +1,21 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.menu-day {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: $color_yellow;
+}
+
+.select-day {
+  @include NunitoFont;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $color_grey;
+}

@@ -1,0 +1,50 @@
+
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.sidebar1 {
+    top: 230px;
+  }
+  .sidebar2 {
+    top: 50px;
+  }
+
+.sidebar {
+  position: fixed !important;
+  .sidebar-container {
+    margin-left: 50px;
+
+    .side-nav {
+      list-style: none;
+      margin: 20px 0;
+      padding: 0;
+      text-align: center;
+
+      .nav-item {
+      
+        .active-day {
+          font-weight: 500;
+          font-size: 15px;
+          color: $color_light_yellow;
+          padding-top: 5px;
+          cursor: pointer;
+        }
+        .date {
+          color: $color_whitish_grey;
+          font-size: 10px;
+          padding-top: 30px;
+        }
+
+ 
+        .inactive-day {
+          font-weight: 500;
+          font-size: 15px;
+          color: $color_light_yellow;
+          padding-top: 5px;
+          cursor: pointer;
+        }
+    
+      }
+    }
+  }
+}

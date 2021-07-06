@@ -1,0 +1,77 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.mealCenter {
+  text-align: center;
+  margin-top: 16%;
+  justify-content: center;
+
+  .mealtagline {
+    @include NunitoFont;
+    font-weight: 400;
+    font-size: 10px;
+    color: $color_light_fiord;
+    padding-right: 1.75%;
+    line-height: 10px;
+  }
+
+  .autopilot {
+    @include NunitoFont;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 26px;
+    color: $color_lightest_woodsmoke;
+  }
+
+  .foodchoice {
+    @include NunitoFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color_lightest_woodsmoke;
+  }
+
+  .startbutton {
+    margin-top: 41px;
+    background-color: $color_black;
+    color: $color_white;
+    border-radius: 50px;
+    width: 140px;
+    height: 60px;
+    @include NunitoFont;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 7px 23px;
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mealCenter {
+    margin-top: 50%;
+
+    .startbutton {
+      display: none !important;
+    }
+
+    .startbuttonmobile {
+      margin-top: 41px;
+      background-color: $color_light_yellow !important;
+      color: $color_black !important;
+      border-radius: 50px !important;
+      @include NunitoFont;
+      font-weight: 600 !important;
+      font-size: 16px;
+      padding: 16px 40px !important;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .startbuttonmobile {
+    display: none !important;
+  }
+}

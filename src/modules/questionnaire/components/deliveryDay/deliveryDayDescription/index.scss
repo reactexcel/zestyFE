@@ -1,0 +1,22 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.day-description {
+  @include MontserratFont;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: $color_fiord_dark;
+}
+
+@media only screen and (max-width: 650px) {
+  .day-description {
+    @include MontserratFont;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: $color_grey !important;
+  }
+}

@@ -1,0 +1,20 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.questionnaires-details {
+  border: 3px dashed $color_alto;
+  box-sizing: border-box;
+  .choices-list {
+    min-width: 150px;
+    color: $color_light_yellow;
+  }
+}
+
+.active-plan {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color_lightest_woodsmoke;
+}

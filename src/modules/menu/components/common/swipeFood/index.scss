@@ -1,0 +1,29 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin commonButton {
+  @include NunitoFont;
+  border: none;
+  outline: none;
+  background: $color_black;
+  border-radius: 60px;
+  color: $color_white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 5px 10px 5px;
+  width: 100px;
+}
+.swipe_button_main {
+  margin-left: 50px;
+  flex-direction: column;
+  justify-content: center;
+  button {
+    @include commonButton;
+  }
+}
+.swipe_button_main_mobile {
+  button {
+    @include commonButton;
+  }
+}

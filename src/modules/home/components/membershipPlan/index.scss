@@ -1,0 +1,45 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.landing_membership {
+  margin-top: 30px;
+  .membership {
+    background: $color_white;
+    border: 1px solid $color_primary_alto;
+    box-sizing: border-box;
+    box-shadow: $box_shadow_primary;
+    border-radius: 12px;
+    .membership_text {
+      .membership_text_heading {
+        color: $color_medium_light_grey;
+        font-weight: bolder;
+        font-size: 25px;
+        line-height: 20px;
+      }
+      .membership_text_para {
+        color: $color_medium_light_grey;
+        font-size: 15px;
+        font-weight: normal;
+      }
+    }
+    .membership_price {
+      .price_text {
+        color: $color_medium_light_grey;
+        font-weight: bolder;
+        font-size: 35px;
+        line-height: 30px;
+      }
+      .join_button {
+        margin: auto;
+        background: $color_yellow;
+        border: none;
+        border-radius: 50px;
+        color: $color_white;
+        padding: 7px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        outline: none;
+      }
+    }
+  }
+}

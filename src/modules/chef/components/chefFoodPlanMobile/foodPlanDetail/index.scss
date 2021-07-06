@@ -1,0 +1,38 @@
+@import "src/assets/scss/variables.scss";
+
+@mixin timingDetail {
+  color: $color_black_medium;
+  font-size: 18px;
+  font-weight: bold;
+}
+@mixin timingMainHeader {
+  color: $color_black_medium;
+  font-size: 14px;
+}
+
+.main_food_heading {
+  font-size: 18px;
+  color: $color_black;
+}
+
+.foodTiming {
+  .timing {
+    @include timingDetail;
+  }
+  .timing_heading {
+    @include timingMainHeader;
+  }
+  border-bottom: 1px solid $color_lightest_white;
+}
+
+.customer {
+  .customer_name {
+    color: $color_black_medium;
+    font-size: 14px;
+  }
+  .customer_details {
+    font-size: 16px;
+    color: $color_black_medium;
+  }
+  border-bottom: 1px solid $color_lightest_white;
+}

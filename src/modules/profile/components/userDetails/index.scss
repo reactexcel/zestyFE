@@ -1,0 +1,30 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.about-user {
+    background-color: $color_dark_wheat;
+    border-radius: 10px;
+    img {
+      max-width: 120px;
+      max-height: 80px;
+    }
+    .user-profile-details {
+      .edit-profile {
+        @include NunitoFont;
+        background: $color_dark_wheat;
+        border-radius: 5px;
+        border: 1px solid $color_black;
+        padding: 5px 13px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: $color_black;
+        flex: none;
+        order: 0;
+        align-self: center;
+        flex-grow: 0;
+        margin: 10px 0px;
+      }
+    }
+  }

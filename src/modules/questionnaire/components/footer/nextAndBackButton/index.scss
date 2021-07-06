@@ -1,0 +1,49 @@
+@import "src/assets/scss/variables.scss";
+
+.back-close {
+  padding: 30px 80px;
+  .left-f1 {
+    padding-top: 4px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .right-f {
+    float: right;
+    cursor: pointer;
+    outline: none;
+
+    .next_btn {
+      background-color: $color_yellow;
+      border: none;
+      border-radius: 18px;
+      padding: 7px 13px 7px 13px;
+      color: $color_white;
+      outline: none;
+    }
+
+    button:active {
+      outline: none;
+      border: none;
+    }
+
+    button:focus {
+      outline: 0;
+    }
+  }
+  .clear {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .back-close {
+    padding: 30px 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .back-close {
+    padding: 30px 10px;
+  }
+}

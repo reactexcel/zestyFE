@@ -1,0 +1,15 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.container-sp36 {
+  padding: 0% 6%;
+  .select-y36 {
+    font-size: 25px;
+    padding-top: 4%;
+    @include MontserratFont;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37px;
+    color: $color_grey;
+  }
+}

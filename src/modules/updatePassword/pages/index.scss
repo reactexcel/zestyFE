@@ -1,0 +1,31 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.update_desktop {
+  display: block;
+  .update-page {
+    width: 50%;
+    margin: auto;
+    .welcome {
+      padding-top: 4%;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .welcome::after {
+      content: "";
+      display: block;
+      padding-bottom: 4%;
+      border-bottom: 2px solid $color_light_fiord;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .update_desktop {
+    .update-page {
+      width: 75%;
+      margin: auto;
+    }
+  }
+}

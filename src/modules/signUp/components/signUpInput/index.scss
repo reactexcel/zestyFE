@@ -1,0 +1,19 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.signup-input {
+  width: 425px;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  display: block;
+  margin: auto;
+  outline: none;
+  border: none;
+  border-bottom: 1.1px solid $color_solid_silver;
+}
+
+@media only screen and (max-width: 600px) {
+  .signup-input {
+    width: 80%;
+  }
+}

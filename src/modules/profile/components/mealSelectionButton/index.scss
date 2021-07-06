@@ -1,0 +1,30 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin commonButton {
+  background-color: $color_white;
+  color: $color_darkest_yellow;
+  border: 1px solid $color_darkest_yellow;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.activeBtn {
+  box-shadow: 0px 8px 15px $color_yellow;
+  background-color: $color_yellow !important;
+  border: 1px solid $color_darkest_yellow;
+  color: whitesmoke !important;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.notActiveBtn {
+  @include commonButton;
+}
+.notActiveBtn:hover {
+  @include commonButton;
+}
