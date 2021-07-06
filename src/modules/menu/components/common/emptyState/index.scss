@@ -1,0 +1,16 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.loadAllData {
+  @include NunitoFont;
+  padding: 6px 25px;
+  border-radius: 10px;
+  font-style: normal;
+  color: $color_white !important;
+  background: $color_yellow;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  width: fit-content;
+}
+

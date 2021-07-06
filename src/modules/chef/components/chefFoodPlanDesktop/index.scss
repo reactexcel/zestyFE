@@ -1,0 +1,53 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.chef-food-plan-table-desktop {
+  padding: 20px 50px;
+  .heading_1 {
+    width: 20%;
+    padding-bottom: 30px;
+    border: 1px solid $color_darker_wheat;
+  }
+  .heading_2 {
+    width: 80%;
+    padding: 0;
+    .time_prepared_row {
+      width: 20%;
+      padding: 0;
+      border: none;
+      .time_prepared {
+        word-break: break-all;
+      }
+    }
+  }
+  .chef_table_body {
+    .chef_table_body_day {
+      width: 15%;
+      border: 1px solid $color_dark_wheat;
+      background-color: $color_lighter_white;
+    }
+    .chef_table_body_item {
+      width: 85%;
+      padding: 0;
+      .mealtiming {
+        width: 20%;
+        border: 1px solid $color_secondary_alto;
+        background-color: $color_white_smoke;
+      }
+      .chef_table_body_row {
+        width: 80%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .heading_1 {
+    width: 10vw;
+    padding: 0 !important;
+  }
+  .heading_2 {
+    width: 70vw;
+  }
+}

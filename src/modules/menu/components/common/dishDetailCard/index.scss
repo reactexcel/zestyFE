@@ -1,0 +1,12 @@
+@import "src/assets/scss/variables.scss";
+
+.menu-detail-item-card {
+  width: 30vw;
+  height: auto;
+  background: $color_white;
+  border: 2px solid $color_dark_alto;
+  box-sizing: border-box;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}

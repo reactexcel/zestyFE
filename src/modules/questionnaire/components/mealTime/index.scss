@@ -1,0 +1,31 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.time-wrapper-container {
+  padding: 0% 6%;
+  margin-bottom: 8rem;
+
+  .select-y26 {
+    font-size: 26px;
+    padding-top: 4%;
+  }
+  .updateTime {
+    background: $color_yellow;
+    border: none !important;
+    color: $color_white;
+    border: 2px solid $color_silver;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 30px;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .time-wrapper-container {
+    .select-y26 {
+      font-size: 16px;
+      margin-top: 10px !important;
+    }
+  }
+}

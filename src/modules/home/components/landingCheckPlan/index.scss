@@ -1,0 +1,65 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.customer-review {
+  .customer-review-heading {
+    @include RubikFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    color: $color_lightest_woodsmoke;
+    padding-top: 30px;
+  }
+
+  .carousel {
+    .carousel-control-prev {
+      justify-content: flex-end !important;
+      width: 13% !important;
+
+      img {
+        background-color: $color_white;
+        border-radius: 50%;
+        padding: 6px 9px;
+      }
+    }
+
+    .carousel-control-next {
+      justify-content: flex-start !important;
+      width: 13% !important;
+
+      img {
+        background-color: $color_white;
+        border-radius: 50%;
+        padding: 6px 9px;
+      }
+    }
+
+    .carousel-indicators {
+      display: none;
+    }
+
+    .carousel-inner {
+      .carousel-item {
+        margin-top: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .customer-review {
+    .customer-review-heading {
+      padding-left: 11px !important;
+    }
+
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          margin-top: 665px !important;
+        }
+      }
+    }
+  }
+}

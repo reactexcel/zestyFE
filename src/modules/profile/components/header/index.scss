@@ -1,0 +1,47 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.profile_header {
+  background-color: $color_woodsmoke;
+  .profile_img {
+    max-width: 65px;
+    max-height: 50px;
+    border-radius: 100%;
+  }
+
+  nav {
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+    .navbar {
+      display: flex !important;
+      justify-content: space-between;
+      margin-right: 3vw;
+      margin-left: 7vw;
+    }
+    .navbar-brand {
+      padding-top: 0px;
+    }
+
+    p {
+      padding-left: 5px;
+      font-weight: normal !important;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.1em !important;
+      color: $color_solid_yellow;
+      margin-bottom: 0px;
+    }
+
+    .navbar-nav {
+      a {
+        @include NunitoFont;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        color: $color_white !important;
+      }
+    }
+  }
+}

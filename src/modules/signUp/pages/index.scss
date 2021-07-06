@@ -1,0 +1,10 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.credential {
+  padding-top: 10px;
+  @include NunitoFont;
+  font-weight: 400;
+  font-size: 16px;
+}
+

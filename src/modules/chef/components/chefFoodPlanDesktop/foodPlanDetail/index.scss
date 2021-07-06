@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables.scss";
+
+.item_list {
+  font-size: 14px;
+  word-break: break-all;
+  border: 1px solid $color_alto;
+}
+.customer_names {
+  @extend .item_list;
+  width: 25%;
+  background-color: $color_yellowish_grey;
+}
+.customer_dish {
+  @extend .item_list;
+  width: 30%;
+  background-color: $color_yellowish_grey;
+}
+.customer_adult_count {
+  @extend .item_list;
+  width: 20%;
+  background-color: $color_yellowish_grey;
+}
+.customer_timing {
+  @extend .item_list;
+  width: 25%;
+  background-color: $color_medium_wheat;
+}

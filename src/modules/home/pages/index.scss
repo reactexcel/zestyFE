@@ -1,0 +1,12 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.header {
+  background-image: url(../../../assets/images/header_background.svg);
+  background-size: cover;
+}
+
+.customer-review-section {
+  background-color: $color_yellow;
+  height: auto;
+}

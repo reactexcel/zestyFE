@@ -1,0 +1,13 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.menu-list-heading {
+  @include MontserratFont;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: $color_black;
+}

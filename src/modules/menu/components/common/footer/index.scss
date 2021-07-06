@@ -1,0 +1,37 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin commonBackBtn {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.pagination-row {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  .next-btn {
+    @include commonBackBtn;
+    align-items: flex-start;
+    padding: 10px 20px 10px 20px;
+    background: $color_yellow;
+    color: $color_fiord_dark;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+  }
+  
+  .previous-button {
+    padding-top: 10px;
+    @include commonBackBtn;
+  }
+  .back-btn {
+    @include commonBackBtn;
+  }
+  
+}

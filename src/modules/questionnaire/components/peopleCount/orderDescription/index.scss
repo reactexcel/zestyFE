@@ -1,0 +1,14 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.orderDescription {
+  @include MontserratFont;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: $color_fiord_dark;
+}
+
+.about_people {
+  font-size: 14px;
+}

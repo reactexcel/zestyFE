@@ -1,0 +1,22 @@
+.people-type-list {
+  padding-left: 8%;
+  padding-top: 2%;
+
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .people-type-list {
+    padding-left: 2% !important;
+    padding-top: 3rem !important;
+
+    .options {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

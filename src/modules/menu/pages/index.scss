@@ -1,0 +1,109 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.menu-header {
+  background-color: $color_woodsmoke;
+
+  .navbar {
+    display: flex !important;
+    justify-content: space-between;
+    margin-right: 3vw;
+    margin-left: 8vw;
+
+    p {
+      padding-left: 5px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.1em;
+      color: rgba(230, 190, 62, 0.64);
+    }
+
+    .navbar-toggler {
+      border: none;
+
+      .navbar-toggler-icon {
+        background-color: none;
+      }
+    }
+  }
+
+  .nav-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color_white !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .sign-up {
+    background-color: $color_white;
+    color: $color_yellow;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 11px 27px;
+  }
+}
+.menu_list {
+  background-color: $color_white;
+  .menu-header1 {
+    background-color: $color_white;
+    .menu-text {
+      @include NunitoFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 68px;
+      letter-spacing: 0.05em;
+      color: $color_yellow;
+      margin-bottom: 0px;
+      padding-top: 20px;
+    }
+  
+    .menu-path {
+      @include NunitoFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      text-decoration-line: underline;
+      color: $color_lightest_white;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+
+.menu-list-container {
+  a:hover {
+    text-decoration: none !important;
+    color: auto !important;
+  }
+
+  .menu-list {
+    width: 100%;
+    float: right;
+    margin-top: -20px;
+  }
+}
+.menu-list-mobile-container {
+ display: block;
+  }
+
+@media only screen and (max-width: 500px) {
+  .menu-list-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .menu-list-mobile-container {
+    display: none;
+  }
+}

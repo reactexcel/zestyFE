@@ -1,0 +1,111 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.meal-list-heading {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0.04em;
+  color: $color_black;
+  margin-top: 4rem;
+
+  span {
+    margin-left: 10px;
+
+    img {
+      vertical-align: bottom !important;
+    }
+  }
+}
+.meal-card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-right: 0px !important;
+
+  .meal_list1 {
+    padding-left: 0px !important;
+  }
+
+  .meal_list2 {
+    padding-right: 0px !important;
+    display: flex;
+    align-content: center;
+  }
+
+  .meal-card {
+    width: 347px;
+    min-height: 331px;
+    margin-top: 10px;
+    background: $color_white;
+    box-shadow: $box_shadow_primary;
+    border-radius: 20px;
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .meal-list-heading {
+    @include NunitoFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    color:$color_black;
+    margin-top: 2rem;
+
+    span {
+      img {
+        width: 8%;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .meal-list-heading {
+    @include NunitoFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    color: $color_black;
+    margin-top: 2rem;
+
+    span {
+      img {
+        width: 8%;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .meal-card-list {
+    .meal_list1 {
+      display: none;
+
+      .create-menu {
+        display: none;
+      }
+    }
+
+    .meal_list2 {
+      display: none;
+
+      .create-menu {
+        display: none;
+      }
+    }
+
+    .meal-card {
+      margin-right: 0px !important;
+      margin-top: 10px;
+
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin dietaryCommon {
+  @include NunitoFont ;
+  border-radius: 10px !important;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  font-weight: 600 !important;
+  font-size: 25px !important;
+  line-height: 34px !important;
+  width: 13rem !important;
+  height: 12vw !important;
+  box-shadow: none !important;
+}
+@mixin dietaryMobileCommon {
+  width: 100% !important;
+  padding: 14.5% 1.5% !important;
+  font-size: 20px !important;
+  height: 37vw !important;
+}
+.vegetarian-active {
+  @include dietaryCommon;
+  border: 1px solid $color_yellow !important;
+}
+.vegetarian {
+  @include dietaryCommon;
+  border-color: $color_light_fiord !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .vegetarian-active {
+    @include dietaryMobileCommon;
+  }
+  .vegetarian {
+    @include dietaryMobileCommon;
+  }
+}

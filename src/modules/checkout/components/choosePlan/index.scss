@@ -1,0 +1,57 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.choose-plan-card {
+  background: $color_light_wheat;
+  margin-top: 27px;
+  height: 170px;
+
+  .choose-plan-button {
+    background: $color_yellow;
+    border: none;
+    border-radius: 15px;
+    color: $color_white;
+    outline: none;
+    margin-left: 15px;
+    padding: 0px 20px;
+  }
+
+  .plan-type {
+    .plan-type-text {
+      @include RubikFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      color: $color_black;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    button {
+      @include RubikFont;
+      background: $color_yellow;
+      border-radius: 50px;
+      border: none;
+      margin-left: 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      color: $color_black;
+      padding: 5px 20px;
+
+      ::placeholder {
+        @include NunitoFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: $color_light_black;
+      }
+    }
+  }
+}

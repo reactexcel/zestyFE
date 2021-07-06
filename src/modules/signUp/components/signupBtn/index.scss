@@ -1,0 +1,72 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.signup {
+  @include NunitoFont;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 30px;
+
+  .signupbtn button {
+    margin-top: 10px !important;
+    color: $color_white;
+    background: $color_yellow;
+    width: 37%;
+    display: block;
+    margin: auto;
+    padding: 1%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  .alreadyHaveAnAccount {
+    padding-top: 30px;
+
+    .signInLink {
+      color: $color_light_yellow;
+      cursor: pointer;
+    }
+  }
+
+  .Or {
+    padding-top: 10px;
+  }
+
+  .chef {
+    padding-top: 50px;
+
+    .ChefLink {
+      color: $color_light_yellow;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .signup {
+    @include NunitoFont;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    padding-top: 30px;
+
+    .signupbtn button {
+      margin-top: 10px !important;
+      color: $color_white;
+      background: $color_yellow;
+      width: 80%;
+      display: block;
+      margin: auto;
+      padding: 1%;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .conditions {
+      text-align: center;
+    }
+  }
+}

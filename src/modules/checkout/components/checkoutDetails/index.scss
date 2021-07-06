@@ -1,0 +1,29 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.checkout-page {
+  margin-right: 4vw;
+  margin-left: 5vw;
+  padding-top: 7vw !important;
+
+  .checkout-paging {
+    @include NunitoFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    color: $color_grey;
+  }
+
+  .billing-heading {
+    @include NunitoFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    color: $color_black;
+  }
+}

@@ -1,0 +1,37 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.cuisines-details {
+  .select-y {
+    @include MontserratFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 0px;
+    color: $color_fiord_dark;
+    padding-top: 6%;
+  }
+
+  .cuisines-text {
+    @include MontserratFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 35px;
+    color: $color_fiord_dark;
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cuisines-details {
+    .select-y {
+      font-size: 20px;
+      padding-top: 12%;
+      line-height: 25px !important;
+    }
+    .cuisines-text {
+      line-height: 25px !important;
+    }
+  }
+}

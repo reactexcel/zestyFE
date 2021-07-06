@@ -1,0 +1,32 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.dietary-question {
+  @include MontserratFont;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: $color_fiord_dark;
+}
+
+.dietary-text {
+  @include MontserratFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color_fiord_dark;
+}
+@media only screen and (max-width: 650px) {
+  .dietary-question {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: $color_grey !important;
+  }
+  .dietary-text {
+    text-align: center !important;
+  }
+}

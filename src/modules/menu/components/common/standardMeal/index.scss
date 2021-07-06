@@ -1,0 +1,11 @@
+@import "src/assets/scss/variables.scss";
+
+.extra_yoghurt_list {
+  background: $color_grey;
+  border-radius: 13px;
+  margin: 7px 3px !important;
+  padding: 0px 13px !important;
+  span {
+    color: $color_white;
+  }
+}

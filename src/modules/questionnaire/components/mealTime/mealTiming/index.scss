@@ -1,0 +1,49 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+@mixin commontime {
+  background: $color_white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 140px;
+  width: 70%;
+  padding-top: 20px;
+}
+.drop-con {
+  margin-bottom: 10%;
+  .drop-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+}
+
+.drop-btn {
+  @include commontime;
+  border: 2px solid $color_silver;
+  span {
+    padding-left: 10px;
+  }
+  .title-text {
+    cursor: pointer;
+  }
+}
+
+.drop-btn-active {
+  @include commontime;
+  border: 2px solid $color_yellow;
+  span {
+    padding-left: 10px;
+  }
+  .title-text {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .drop-con {
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+  }
+}

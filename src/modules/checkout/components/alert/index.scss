@@ -1,0 +1,17 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.alert-msg {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .toast-body {
+    @include NunitoFont;
+    color: $color_light_red;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .alert-msg {
+    max-width: 65% !important;
+  }
+}

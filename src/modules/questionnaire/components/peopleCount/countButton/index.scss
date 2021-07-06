@@ -1,0 +1,33 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.peoples-count {
+  @include NunitoFont;
+  background-color: $color_white;
+  outline: none;
+  border-color: $color_light_fiord;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  width: 22vw;
+  height: 3vw;
+  box-shadow: none !important;
+  border: 1px solid $color_black;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 650px) {
+  .peoples-count {
+    width: 100%;
+    padding: 14.5% 1.5% !important;
+    font-size: 20px !important;
+    height: 3vw;
+
+    div {
+      margin-top: -15px !important;
+    }
+  }
+}

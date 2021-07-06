@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.StartFillingYourBelly {
+    padding-top: 40px;
+    @include NunitoFont;
+    font-weight: 599;
+    font-size: 20px;
+    text-align: center;
+  
+    .hline {
+      height: 1px;
+      background: $color_solid_silver;
+      margin-bottom: 10px;
+      width: 36%;
+      font-weight: bolder;
+    }
+  
+    .required {
+      font-weight: 400;
+      font-size: 14px;
+  
+      .star {
+        color: $color_red;
+      }
+    }
+  }

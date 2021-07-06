@@ -1,0 +1,21 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.meal-active-plan-text {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  width: 100%;
+}
+
+.subscription-box {
+  min-width: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 3px dashed $color_alto;
+  box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.chef_name {
+  @include NunitoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 50px;
+}
+.chef_message {
+  color: $color_light_fiord;
+  font-size: 15px;
+  padding: 0px 50px;
+}
+
+@media only screen and (max-width: 650px) {
+  .chef_name {
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 20px;
+  }
+  .chef_message {
+    text-align: center;
+    padding: 0px 0px;
+  }
+}

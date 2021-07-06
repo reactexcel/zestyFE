@@ -1,0 +1,14 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.item-price {
+  @include MontserratFont;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: $color_dark_yellow;
+  padding-top: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+}

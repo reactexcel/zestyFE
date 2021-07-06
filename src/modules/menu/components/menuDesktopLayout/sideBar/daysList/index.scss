@@ -1,0 +1,28 @@
+@import "src/assets/scss/variables.scss";
+
+@mixin commonActive {
+  height: 4.5vw;
+  width: 13vw;
+  border-radius: 5px;
+}
+@mixin dateName {
+  color: $color_whitish_grey;
+  font-size: 10px;
+  padding-top: 30px;
+}
+
+.active-list {
+  @include commonActive;
+  background: $color_lightest_woodsmoke;
+  .date {
+    @include dateName;
+  }
+}
+
+.inactive-list {
+  @include commonActive;
+  background: $color_blackish_grey;
+  .date {
+    @include dateName;
+  }
+}

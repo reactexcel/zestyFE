@@ -1,0 +1,10 @@
+
+@import "src/assets/scss/variables.scss";
+
+.total_price_container {
+  background-color: $color_white_grey;
+  position: fixed;
+  width: 20vw;
+  top: 90px;
+  right: 30px;
+}

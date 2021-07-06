@@ -1,0 +1,42 @@
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/mixins/index.scss";
+
+.billing-details {
+  .field-name {
+    @include NunitoFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    color: $color_black;
+  }
+  .checkout-button {
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+
+    button {
+      @include NunitoFont;
+      background: $color_yellow;
+      box-shadow: 0px 10px 20px rgba(225, 190, 87, 0.2);
+      border-radius: 50px;
+      border: none;
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      color: $color_white;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      padding: 18px 60px;
+    }
+  }
+  .backtoQuestionnaire {
+    @include NunitoFont;
+    background-color: $color_yellow;
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    color: $color_white;
+  }
+}
